@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Fascinate&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EEEEEE;
+  flex-wrap: wrap;
+}
+
+.logo {
+  flex-wrap: wrap;
+}
+
+.logo h1 {
+  font-family: 'Fascinate', cursive;
+  font-size: 35px;
+  font-weight: 900;
+  margin: 0;
+  color: #666666;
+}
+
+.logo h1 span {
+  color: #0000FF;
+}
+
+.content nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 27px;
+  flex-wrap: wrap;
+}
+
+.content nav ul li {
+  list-style: none;
+}
+
+.content nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+.content nav ul li a:hover {
+  color: #0000FF;
+}
+.content nav ul li a.active-link {
+  color: #0000FF;
+}
+
+.container {
+  max-width: 574px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo {
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.hero {
+
+  margin-bottom: 38px;
+  margin-top: 66px;
+}
+
+.hero h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  color: #666666;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  height: 72px;
+  flex-wrap: wrap;
+}
+
+.list p {
+  margin: 20px;
+}
+
+.list:hover {
+  background-color: #ccc;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ccc;
+}
+
+.list:active {
+  background-color: #ccc;
+}
+
+.line {
+  width: 574px;
+  height: 1px;
+  background-color: #F6F6F6;
+  margin: 15px auto;
+}
+
+.btn {
+  background-color: white;
+  color: #f00;
+  border: 1px solid #f00;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin: 20px;
+}
+
+.btn:hover {
+  background-color: #f00;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ccc;
+  color: white;
+}
+
+.btn:active {
+  background-color: #ccc;
+}
+
+.form-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  max-width: 574px;
+  gap: 23px;
+  margin: 10px auto;
+  height: 48px;
+}
+
+.i4 {
+  height: 100%;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+.i4:hover {
+  background-color: #ccc;
+  transform: scale(1.01);
+  box-shadow: 0 0 10px #ccc;
+  border: 1px solid #666666;
+}
+
+.i4:focus {
+  background-color: #ccc;
+  border: 1px solid #0000FF;
+}
+
+.i4::placeholder {
+  color: #666666;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.b1 {
+  height: 48px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: none;
+  background-color: #0000FF;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 12px 21px;
+}
+
+.b1:hover {
+  background-color: #0000FF;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ccc;
+}
+
+.b1:active {
+  background-color: #ccc;
+}
+
+.total {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.total span {
+  font-weight: 600;
+  color: #000;
+}
+
+.total p {
+  font-size: 20px;
+  color: #666666;
+  font-weight: 400;
+}
+
+.img {
+  width: 574px;
+  height: 316px;
+  margin-top: 44px;
+  margin-bottom: 241px;
+}
+
+.text p {
+  font-size: 20px;
+  color: #666666;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 121px;
+}
+
+.text p span {
+  color: #0000FF;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .b1 {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+    z-index: 1;
+    background-color: #0000FF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    height: 48px;
+    width: auto;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #ccc;
+  }
+.hero{
+  margin-top: 35px;
+}
+  .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    height: 72px;
+    flex-wrap: wrap;
+  }
+
+  .form-items {
+    width: 90%;
+  }
+
+  .img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 44px;
+    margin-bottom: 241px;
+  }
+}
