@@ -1,5 +1,8 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",  <--- لازم تخلي فاصلة اذا اكو سطر وراها
-  "private": true
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
 }
